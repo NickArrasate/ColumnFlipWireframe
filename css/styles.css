@@ -1,0 +1,165 @@
+*:not(body):not(html) {
+  box-sizing:border-box;
+}
+.columns {
+  min-height: 100px;
+}
+.wrap{
+  height: 100vh;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.columnWrap{
+  width: 100%;
+}
+.nav {
+  height: 50px;
+  margin-bottom: 1vh;
+  clear: both;
+}
+.logo{
+  height: 50px;
+  width: 24%;
+  max-width: 170px;
+  margin-bottom: 1vh;
+  float:left;
+  background: #bbb;
+}
+.navBtn{
+  height: 100%;
+  width: 24%;
+  display: inline-block;
+  float: left;
+  margin-right: 1%;
+  background: #bbb;
+}
+.feature1{
+  width: 100%;
+  margin-bottom: 1vh;
+  background: lightgrey;
+}
+.feature2{
+  width: 200px;
+  height: 200px;
+  margin:0 auto;
+  margin-bottom: 1vh;
+  border-radius: 50%;
+  background: lightgrey;
+}
+.columns{
+  width: 100%;
+  height: 10%;
+  margin-bottom: 1vh;
+  background: darkgrey;
+}
+.contentCol1, .contentCol2{
+  display: none;
+}
+.thumbnail{
+  height: 100px;
+  width:100px;
+  background: darkgrey;
+  margin-right: 8px;
+  float: left;
+}
+/*==============MEDIA QUERIES===============================*/
+@media screen and (min-width:750px){
+  .nav{
+    clear:none;
+  }
+  .navBtn{
+    width: 12%;
+    float: right;
+    display: inline;
+    margin-right: 0;
+    margin-left: 1%;
+  }
+  .feature1{
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+    margin-top: 80px;
+  }
+  .feature2{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin-right: 8%;
+  }
+  .columnWrap{
+    text-align: center;
+  }
+  .columns{
+    width: 30%;
+    height: 200px;
+    display: inline-block;
+  }
+  .columns:first-child{
+    float: left;
+  }
+  .columns:last-child{
+    float: right;
+  }
+  .contentCol1{
+    display: block;
+    width: 45%;
+    float:left;
+    padding-left: 20px;
+    margin-right: 5%;
+  }
+  .contentCol2{
+    display: block;
+    width: 45%;
+    float:left;
+    padding-right: 20px;
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width:1200px){
+  .nav{
+    height: 75px;
+  }
+  .feature1{
+    font-size: 14pt;
+    margin-top: 100px;
+  }
+  .feature2{
+    width: 400px;
+    height:400px;
+  }
+  .columnWrap{
+    width:33%;
+    padding-left: 20px;
+    float: left;
+  }
+  .columns{
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .columns:first-child{
+    float: none;
+  }
+  .columns:last-child{
+    float: none;
+  }
+  .contentCol1{
+    width: 34%;
+    float: left;
+    margin-right: 0;
+  }
+  .contentCol2{
+    width: 33%;
+    float: left;
+    margin-left: 0;
+    padding-left: 20px;
+  }
+}
+/*============CLEARFIX============*/
+
+.clearfix{
+  content: '';
+  display: table;
+  clear: both;
+}
